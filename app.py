@@ -93,7 +93,7 @@ if uploaded_file:
                     text = f"{labels[int(cls)]}: {conf:.2%}"
 
                     # Thick white bounding box for clarity
-                    draw.rectangle([x1, y1, x2, y2], outline="white", width=4)
+                    draw.rectangle([x1, y1, x2, y2], outline="white", width=60)
 
                     # Text background and label
                     bbox = draw.textbbox((x1, y1), text, font=font)
